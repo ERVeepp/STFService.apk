@@ -477,7 +477,7 @@ public class Service extends android.app.Service {
                         boolean adbEnabled = lastAdbState.contains("adb");
                         if (disconnected || !adbEnabled) {
                             Log.d(TAG, "Start activity for STFService");
-                            getApplication().startActivity(new IdentityActivity.IntentBuilder().build(getApplication()));
+                            // getApplication().startActivity(new IdentityActivity.IntentBuilder().build(getApplication()));
                         }
 
                         adbdStateReader.close();
